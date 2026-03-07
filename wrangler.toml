@@ -1,11 +1,8 @@
-# Configuração Wrangler para MM Entulho - Cloudflare Pages
-# Para Cloudflare Pages, a configuração é mínima
-# O build command e output directory são gerenciados pelo Cloudflare Pages
-
 name = "mmentulho"
-type = "javascript"
+compatibility_date = "2026-03-07"
 
-# Cloudflare Pages gerencia automaticamente:
+# Configuração para Cloudflare Pages
+# A plataforma gerencia automaticamente:
 # - Build command: npm run build
 # - Build output directory: dist
-# - Upload do _worker.js
+# - Deploy do _worker.js gerado pelo Astro com Cloudflare adapter
