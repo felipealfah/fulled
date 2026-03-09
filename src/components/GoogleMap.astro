@@ -46,12 +46,12 @@ const {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               // Mapa está visível, carregar agora
-              const mapEmbedUrl = mapEmbedUrl || "https://www.google.com/maps?q=-15.7801,-47.9292&hl=pt-BR&z=14&output=embed";
-              const mapTitle = title || "Google Maps";
+              const finalMapUrl = mapEmbedUrl || "https://www.google.com/maps?q=-15.7801,-47.9292&hl=pt-BR&z=14&output=embed";
+              const finalMapTitle = title || "Google Maps";
 
               mapContainer.innerHTML = `
                 <iframe
-                  src="${mapEmbedUrl}"
+                  src="${finalMapUrl}"
                   width="100%"
                   height="450"
                   style="border:0;"
@@ -59,7 +59,7 @@ const {
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   class="w-full"
-                  title="Google Maps - ${mapTitle}"
+                  title="Google Maps - ${finalMapTitle}"
                 ></iframe>
               `;
 
@@ -74,12 +74,12 @@ const {
         observer.observe(mapContainer);
       } else {
         // Fallback para navegadores que não suportam IntersectionObserver
-        const mapEmbedUrl = mapEmbedUrl || "https://www.google.com/maps?q=-15.7801,-47.9292&hl=pt-BR&z=14&output=embed";
-        const mapTitle = title || "Google Maps";
+        const finalMapUrl = mapEmbedUrl || "https://www.google.com/maps?q=-15.7801,-47.9292&hl=pt-BR&z=14&output=embed";
+        const finalMapTitle = title || "Google Maps";
 
         mapContainer.innerHTML = `
           <iframe
-            src="${mapEmbedUrl}"
+            src="${finalMapUrl}"
             width="100%"
             height="450"
             style="border:0;"
@@ -87,7 +87,7 @@ const {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="w-full"
-            title="Google Maps - ${mapTitle}"
+            title="Google Maps - ${finalMapTitle}"
           ></iframe>
         `;
       }
