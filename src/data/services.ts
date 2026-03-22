@@ -48,7 +48,7 @@ export const services: Service[] = [
     description: 'Aluguel de caçambas de entulho em diversos tamanhos (4m³, 6m³ e 8m³) para reformas, demolições e obras em Brasília e DF. Entrega rápida, caçamba limpa e rastreada, com responsabilidade ambiental garantida.',
     longDescription: 'Aluguel de caçambas de entulho em Brasília com entrega rápida. Ideal para reformas, demolições e limpeza de terrenos. Caçambas de qualidade com coleta rápida e segura.',
     icon: 'M20 13a1 1 0 100-2v2a1 1 0 100-2v-2zm0 0V9a2 2 0 00-2-2H6a2 2 0 00-2 2v4m16 0h2a1 1 0 001-1v-4a1 1 0 00-1-1h-2m0 0V9a2 2 0 00-2-2H6a2 2 0 00-2 2v4m0 0H2a1 1 0 00-1 1v4a1 1 0 001 1h2',
-    image: '/aluguel_cacamba_entulhobrasilia.webp',
+    image: '/optimized/aluguel_cacamba_entulhobrasilia-400w.webp',
     primaryKeyword: 'caçamba de entulho brasília',
     secondaryKeywords: [
       'aluguel caçamba brasília',
@@ -82,7 +82,7 @@ export const services: Service[] = [
     description: 'Serviço rápido de remoção de entulho sob demanda — ligue ou envie mensagem e resolvemos em até 2 horas em toda Brasília e DF. Ideal para limpeza de terrenos, garagens, áreas externas e resíduos pontuais.',
     longDescription: 'Tele entulho para retirada rápida de resíduos de construção, demolição e limpeza. Chamada express com coleta no mesmo dia. Ideal para pequenas e médias quantidades de entulho.',
     icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 00.948-.684l1.498-4.493a1 1 0 011.502-.684l1.498 4.493a1 1 0 00.948.684H19a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z',
-    image: '/tele_entulho_brasilia.webp',
+    image: '/optimized/tele_entulho_brasilia-400w.webp',
     primaryKeyword: 'tele entulho brasília',
     secondaryKeywords: [
       'tele entulho df',
