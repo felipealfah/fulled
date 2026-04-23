@@ -18,79 +18,52 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="EO Marido de Aluguel" />
-    <meta name="theme-color" content="#dfb43e" />
+    <meta name="author" content="Full Estratégias Digitais" />
+    <meta name="theme-color" content="#04020f" />
 
     <title>{title}</title>
     <link rel="canonical" href={Astro.url} />
-
-    {/* Preload LCP Image - Optimized AVIF version */}
-    <link
-      rel="preload"
-      as="image"
-      href="/optimized/cacamba_de_entulho _em_brasilia-1200w.avif"
-      fetchpriority="high"
-      type="image/avif"
-    />
-
-    {/* Preload LCP Image - WebP fallback */}
-    <link
-      rel="preload"
-      as="image"
-      href="/optimized/cacamba_de_entulho _em_brasilia-1200w.webp"
-      fetchpriority="high"
-      type="image/webp"
-    />
 
     {/* Open Graph Tags - Compartilhamento Social */}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:site_name" content="EO Marido de Aluguel" />
-    <meta property="og:image" content={`${Astro.url}maridodealuguelaguasclaras.png`} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Full Estratégias Digitais" />
 
     {/* Twitter Card Tags */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${Astro.url}maridodealuguelaguasclaras.png`} />
 
 
     {/* Prefetch de rotas importantes (DNS only, sem CSS) */}
     <link rel="dns-prefetch" href="/" />
-    <link rel="dns-prefetch" href="/sobre" />
-    <link rel="dns-prefetch" href="/servicos" />
-    <link rel="dns-prefetch" href="/contato" />
+    <link rel="dns-prefetch" href="#sobre" />
+    <link rel="dns-prefetch" href="#servicos" />
+    <link rel="dns-prefetch" href="#contato" />
 
     {/* Structured Data - Organization */}
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "EO Marido de Aluguel",
-      "url": Astro.url.toString(),
-      "logo": `${Astro.url}eomaridodealuguel.png`,
-      "description": "Marido de Aluguel em Águas Claras - Serviços elétricos, hidráulicos, desentupimento, montagem e reparos residenciais",
+      "name": "Full Estratégias Digitais",
+      "url": "https://fulled.com.br",
+      "description": "Agência de marketing digital especializada em SEO local, geração de leads e estratégias digitais orientadas por dados.",
+      "telephone": "+55-61-97402-2227",
+      "email": "contato@fulled.com.br",
       "sameAs": [
-        "https://www.facebook.com/eomaridodealuguel",
-        "https://www.instagram.com/eomaridodealuguel",
-        "https://www.whatsapp.com/eomaridodealuguel"
+        "https://www.instagram.com/fulled.com.br"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "telephone": "+55-61-97402-2227",
-        "email": "contato@eomaridodealuguel.com.br"
+        "email": "contato@fulled.com.br"
       },
       "areaServed": {
         "@type": "Place",
-        "name": "Águas Claras, Brasília - DF",
-        "geo": {
-          "@type": "GeoShape",
-          "box": "-15.75 -48.00 -15.78 -47.98"
-        }
+        "name": "Brasília, DF — Brasil"
       }
     })}></script>
 
@@ -98,52 +71,31 @@ const { title, description } = Astro.props;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "EO Marido de Aluguel",
-      "url": Astro.url.toString(),
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": `${Astro.url.toString()}?q={search_term_string}`
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "name": "Full Estratégias Digitais",
+      "url": "https://fulled.com.br"
     })}></script>
 
     {/* Structured Data - LocalBusiness */}
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "EO Marido de Aluguel Águas Claras",
-      "description": "Marido de Aluguel em Águas Claras - Serviços elétricos, hidráulicos, desentupimento, instalações, montagem e reparos residenciais",
-      "image": `${Astro.url}eomaridodealuguel.png`,
-      "url": Astro.url.toString(),
+      "@type": "ProfessionalService",
+      "name": "Full Estratégias Digitais",
+      "description": "Agência de marketing digital especializada em SEO local, geração de leads e estratégias digitais orientadas por dados.",
+      "url": "https://fulled.com.br",
       "telephone": "+55-61-97402-2227",
-      "email": "contato@eomaridodealuguel.com.br",
+      "email": "contato@fulled.com.br",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Águas Claras",
         "addressLocality": "Brasília",
         "addressRegion": "DF",
-        "postalCode": "71927-000",
         "addressCountry": "BR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-15.7759",
-        "longitude": "-47.9945"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
         "closes": "18:00"
-      },
-      "priceRange": "R$ 80 - R$ 200",
-      "sameAs": [
-        "https://www.facebook.com/eomaridodealuguel",
-        "https://www.instagram.com/eomaridodealuguel"
-      ]
+      }
     })}></script>
   </head>
   <body>

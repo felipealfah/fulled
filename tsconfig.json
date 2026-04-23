@@ -1,5 +1,5 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -8,7 +8,8 @@
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"]
-    }
+    },
+    "ignoreDeprecations": "6.0"
   },
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]

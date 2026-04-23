@@ -4,11 +4,13 @@
 
 /* Custom styles */
 :root {
-  --primary: #dfb43e;
-  --primary-dark: #c99a2f;
-  --primary-light: #f0c560;
-  --secondary: #ee6a03;
-  --secondary-dark: #d15a02;
+  --primary: #04020f;
+  --primary-dark: #020108;
+  --primary-light: #1a1525;
+  --secondary: #4787cc;
+  --secondary-dark: #3670aa;
+  --accent: #3bb9c2;
+  --accent-dark: #2a9da5;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-  @apply font-sans text-gray-800;
+  @apply font-sans text-gray-800 bg-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,7 +27,6 @@ a {
   @apply transition-colors duration-200;
 }
 
-/* Melhor hierarquia visual */
 h1 {
   @apply text-3xl md:text-5xl lg:text-6xl font-bold leading-tight;
 }
@@ -42,19 +43,18 @@ p {
   @apply leading-relaxed text-gray-700;
 }
 
-/* Shadows melhorados */
 .shadow-sm {
-  box-shadow: 0 1px 2px 0 rgba(223, 180, 62, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(71, 135, 204, 0.05);
 }
 
 .shadow {
-  box-shadow: 0 1px 3px 0 rgba(223, 180, 62, 0.1), 0 1px 2px 0 rgba(223, 180, 62, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(71, 135, 204, 0.1), 0 1px 2px 0 rgba(71, 135, 204, 0.06);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(223, 180, 62, 0.15), 0 2px 4px -1px rgba(223, 180, 62, 0.08);
+  box-shadow: 0 4px 6px -1px rgba(71, 135, 204, 0.15), 0 2px 4px -1px rgba(71, 135, 204, 0.08);
 }
 
 .shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(223, 180, 62, 0.2), 0 4px 6px -2px rgba(223, 180, 62, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(71, 135, 204, 0.2), 0 4px 6px -2px rgba(71, 135, 204, 0.1);
 }

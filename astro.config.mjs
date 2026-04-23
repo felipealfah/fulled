@@ -11,7 +11,7 @@ export default defineConfig({
   // Site URL para geração de sitemap e canonical URLs
   // Para Cloudflare Pages: https://[projeto].pages.dev
   // Para domínio customizado: atualize aqui
-  site: 'https://mmentulho.com.br',
+  site: 'https://fulled.com.br',
 
   integrations: [
     react(),
